@@ -11,15 +11,15 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class ServiceHiApplication {
+public class ServiceHi2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceHiApplication.class, args);
+		SpringApplication.run(ServiceHi2Application.class, args);
 	}
 
 	@Value("${server.port}")
 	String port;
-	@RequestMapping("/hi")
+	@RequestMapping("/hi2")
 	public String home(@RequestParam String name) {
 		try {
 			Thread.sleep(20000);
